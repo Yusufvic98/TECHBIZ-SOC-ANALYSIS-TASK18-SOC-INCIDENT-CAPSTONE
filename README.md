@@ -35,7 +35,7 @@ The investigation extracted alert-derived indicators, assessed event metadata, b
 
 The alert's “Allowed” action is not proof that the payload executed. No independent IIS/SharePoint logs, packet capture, endpoint telemetry, forensic image, malware sample or independent IOC reputation results were supplied. The IP addresses are treated as alert-derived indicators, not independently validated malicious infrastructure.
 
-See [SOC investigation details](docs/SOC-INVESTIGATION.md).
+See [SOC investigation details](SOC-INVESTIGATION.md)
 
 ## 2. Ethical Hacking — Metasploitable 2 assessment
 
@@ -51,7 +51,7 @@ The practical workflow included:
 
 **Key results:** 30 open TCP ports were identified. Anonymous SMB access and anonymous write access to the `tmp` share were demonstrated. Anonymous FTP login was accepted. The VSFTPD 2.3.4 module check indicated that the target appeared vulnerable, but the exploit attempt did not create a session and the follow-up scan found TCP/6200 closed. **No remote shell or command execution is claimed.**
 
-See [Ethical Hacking assessment details](docs/ETHICAL-HACKING-ASSESSMENT.md).
+See [Ethical Hacking assessment details](ETHICAL-HACKING-ASSESSMENT.md)
 
 ## 3. Career and freelancing portfolio evidence
 
@@ -63,7 +63,7 @@ See [Ethical Hacking assessment details](docs/ETHICAL-HACKING-ASSESSMENT.md).
 - **Freelancer.com:** Profile and four portfolio items were shown, covering AWS IAM cloud security, SOC analysis/security monitoring, web application security assessment, and Metasploitable 2 network security assessment.
 - **Paid skill-test limitation:** Freelancer Computer Security Level 1 and Academic Writing Level 1 exam pages each displayed a US$5.00 purchase price. The exams were not purchased or completed. This is a platform-cost limitation, not a completed certification or test.
 
-See [Career portfolio evidence](docs/CAREER-PORTFOLIO.md).
+See [Career portfolio evidence](CAREER-PORTFOLIO.md)
 
 ## 4. Learning evidence
 
@@ -72,18 +72,20 @@ The Ethical Hacking report includes 100% TryHackMe completion screenshots for **
 ## Repository structure
 
 ```text
-.
+TECHBIZ-SOC-ANALYSIS-TASK18-SOC-INCIDENT-CAPSTONE/
+│
 ├── README.md
 ├── EVIDENCE-REGISTER.md
-├── docs/
-│   ├── SOC-INVESTIGATION.md
-│   ├── ETHICAL-HACKING-ASSESSMENT.md
-│   └── CAREER-PORTFOLIO.md
-└── reports/
-    ├── TECHBIZ_SOC_B503_Task18_REVISED_CAPSTONE_INCIDENT_REPORT.pdf
-    └── TechBiz_B503_Ethical_Hacking_Task18_Capstone_Report_REVISED.pdf
+├── CAREER-PORTFOLIO.md
+├── ETHICAL-HACKING-ASSESSMENT.md
+├── SOC-INVESTIGATION.md
+│
+├── TECHBIZ_TASK18_GITHUB_UPLOAD_PACKAGE.zip
+│
+├── TECHBIZ_SOC_B503_Task18_REVISED_CAPSTONE_INCIDENT_REPORT.pdf
+│
+└── TechBiz_B503_Ethical_Hacking_Task18_Capstone_Report_REVISED.pdf
 ```
-
 ## Responsible-use and scope statement
 
 The Ethical Hacking assessment was limited to an intentionally vulnerable training VM on an isolated host-only network. It was not a production penetration test or a client engagement. The SOC case is an evidence-based training investigation using the supplied LetsDefend alert. Neither activity is a certification, commercial security audit or guarantee of security.
